@@ -1,0 +1,119 @@
+/* ====================================================================================================================
+Calendar list and grid (desktop) Break point 1em => 16px so this is 768px (tablet/iPad)
+==================================================================================================================== */
+@media screen and (min-width: 48em) {
+    main {
+        padding-right: 0.5em;
+    }
+
+    .switch {
+        margin-top: 0;
+        padding-top: 10px;
+        margin-bottom: 17px;
+    }
+    // Toggle list view desktop
+    .calendar {
+        &.weekdays {
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 20px;
+            border: none;
+            padding: 10px;
+            display: block;
+        }
+
+        & ul.weekdays li.day-of-week-grid {
+            display: block;
+        }
+        & ul.weekdays li {
+            font-size: 13px;
+            &.day-of-week {
+                display: none;
+            }
+        }
+
+        & li {
+            height: auto;
+            & div.multiple-event-indicator {
+                display: none;
+            }
+            .circle {
+                display: none;
+            }
+        }
+
+        & .calendar-day-list {
+            display: none;
+        }
+
+        .no-event {
+            display: none;
+        }
+    }
+
+    // Calendar grid styles
+    .calendar-grid {
+        .show-info {
+            cursor: pointer;
+            display: block;
+            position: relative;
+            font-size: 9px;
+            line-height: 11px;
+            padding-top: 1px;
+            height: 17px;
+            .auction-type, .summary-mobile {
+                display: none;
+            }
+        }
+        li {
+            height: 180px;
+            &.day-of-week-grid {
+                display: block;
+                font-size: 12px;
+                margin-bottom: 5px;
+            }
+        }
+
+        &.weekdays {
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 20px;
+            border: none;
+            padding: 10px;
+            display: block;
+
+            & li {
+                &.day-of-week {
+                    display: none;
+                }
+            }
+        }
+
+        & ul.weekdays li.day-of-week-grid {
+            display: block;
+        }
+        & ul.weekdays li {
+            font-size: 15px;
+            &.day-of-week {
+                display: none;
+            }
+        }
+
+        & li {
+            height: 180px;
+            & div.multiple-event-indicator {
+                display: block;
+                font-size: 30px;
+            }
+            .circle {
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+
+
+

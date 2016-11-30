@@ -1,0 +1,1023 @@
+/* ====================================================================================================================
+start CSS reset
+====================================================================================================================== */
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none; }
+
+body {
+  line-height: 1;
+  font-size: 88%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  padding: 0;
+  margin: 0; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+.floatLeft {
+  float: left;
+  padding: .5em .5em .5em 0; }
+
+.floatRight {
+  float: right;
+  padding: .5em 0 .5em .5em; }
+
+/*
+end CSS reset
+*/
+/* =================================================================================================
+Typography - limited rules expand on to a complete set as project grows
+================================================================================================= */
+body {
+  font-family: "Open Sans";
+  line-height: 1; }
+
+p {
+  margin: 0 0 1.375em 0;
+  font-size: 1em;
+  line-height: 1; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: bold;
+  color: #4d4d4d;
+  line-height: 2; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.5em; }
+
+/* @import 'widget'; // styles for js widget */
+/* ====================================================================================================================
+Global styles
+===================================================================================================================== */
+body {
+  background-color: white;
+  margin: auto;
+  width: 100%; }
+
+.main {
+  padding: 0 1em;
+  margin: auto;
+  max-width: 1000px; }
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  background-color: white; }
+
+.two-columns,
+.three-columns,
+.six-columns,
+.varying-columns,
+.nested-columns,
+.offset-columns {
+  width: 100%;
+  max-width: 1000px;
+  margin: 1em auto;
+  zoom: 1;
+  padding: 0; }
+  .two-columns:before, .two-columns:after,
+  .three-columns:before,
+  .three-columns:after,
+  .six-columns:before,
+  .six-columns:after,
+  .varying-columns:before,
+  .varying-columns:after,
+  .nested-columns:before,
+  .nested-columns:after,
+  .offset-columns:before,
+  .offset-columns:after {
+    content: "";
+    display: table; }
+  .two-columns:after,
+  .three-columns:after,
+  .six-columns:after,
+  .varying-columns:after,
+  .nested-columns:after,
+  .offset-columns:after {
+    clear: both; }
+  .two-columns > div,
+  .three-columns > div,
+  .six-columns > div,
+  .varying-columns > div,
+  .nested-columns > div,
+  .offset-columns > div {
+    float: left;
+    margin-right: 2%;
+    box-sizing: border-box;
+    height: 7em; }
+
+/* header styles */
+header {
+  background: #F7F7F8;
+  padding: 10px 10px; }
+
+/* clearfix*/
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+p {
+  text-align: center; }
+
+/* ===================================================================================================================
+View and filter capsules
+==================================================================================================================== */
+.capsule-wrapper {
+  width: 100%;
+  background: red; }
+
+div.container-toggle {
+  display: none;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.view-capsule {
+  width: 10%;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 10px 0 0 10px; }
+
+.filter-capsule {
+  width: 10%;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 0 10px 10px 0;
+  right: 2px; }
+
+.view-capsule.toggle, .filter-capsule.toggle {
+  color: #777;
+  border: 2px solid #777;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  float: left;
+  background-color: #fafafa; }
+
+/* End view and filter capsule*/
+/* For IE 6/7 (trigger hasLayout) */
+header {
+  zoom: 1; }
+
+.logo img {
+  width: 85px;
+  height: 41px; }
+
+.menu svg {
+  height: 40px;
+  width: 40px; }
+
+.search-icon svg {
+  height: 30px;
+  width: 30px; }
+
+/* ====================================================================================================================
+ primary nav styles
+ ==================================================================================================================== */
+.nav-wrapper {
+  background: #F7F7F8;
+  width: 100%; }
+
+.nav {
+  width: 100%;
+  position: relative; }
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  background: #F7F7F8;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  display: table; }
+
+.nav li {
+  display: table-cell; }
+  .nav li.logo {
+    margin: auto;
+    width: inherit;
+    padding-right: 13px; }
+
+nav .menu {
+  float: left;
+  position: relative;
+  left: 11px;
+  top: 5px; }
+
+.two-columns .view-all, .view-all {
+  margin-top: 12px;
+  padding-top: 6px;
+  padding-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: inherit;
+  background: none;
+  width: 100%;
+  height: 30px; }
+
+/* ====================================================================================================================
+secondary nav styles
+====================================================================================================================*/
+.secondary-nav {
+  -webkit-transition: opacity 0.5s, width 0.5s ease;
+  transition: opacity 0.5s, width 0.5s ease;
+  opacity: 1;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  overflow: hidden; }
+  .secondary-nav ul {
+    background: #cccccc;
+    text-align: left;
+    margin: 0 auto; }
+    .secondary-nav ul a.close {
+      font-size: 1em;
+      text-align: right;
+      border: none; }
+      .secondary-nav ul a.close:hover {
+        color: #ca1407; }
+    .secondary-nav ul a .contact-us {
+      text-align: left; }
+
+.secondary-nav a {
+  border-bottom-style: solid;
+  border-bottom-color: #999999;
+  border-bottom-width: 0.5px;
+  color: gray;
+  display: block;
+  font-weight: 400;
+  height: 3.6em;
+  letter-spacing: 0.1em;
+  line-height: 3.5em;
+  padding-bottom: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 0;
+  position: relative;
+  text-decoration: none; }
+  .secondary-nav a:hover {
+    color: #e6e6e6; }
+
+a.contact-us {
+  font-size: 12px;
+  padding-bottom: 81px; }
+
+.secondary-nav li {
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease; }
+  .secondary-nav li:hover {
+    background-color: #b3b3b3; }
+    .secondary-nav li:hover a.home {
+      background-color: transparent; }
+    .secondary-nav li:hover.home-base {
+      background: none; }
+  .secondary-nav li:last-child {
+    border-bottom: none; }
+    .secondary-nav li:last-child:hover {
+      background: none; }
+  .secondary-nav li:first-child:hover {
+    background: none; }
+  .secondary-nav li a.home {
+    position: relative;
+    top: -25px;
+    border-bottom: none; }
+    .secondary-nav li a.home img:hover {
+      background: none; }
+
+/*.menu-content {
+  transition: opacity 0.5s, width 0.5s;
+  width: 250px;
+  */
+/*animated transition*/
+/*
+}*/
+.menu-hidden {
+  -webkit-transition: opacity 0.5s, width 0.5s;
+  transition: opacity 0.5s, width 0.5s;
+  width: 0;
+  display: none;
+  opacity: 0; }
+
+/* End secondary nav styles */
+section div {
+  padding: 1em 0; }
+
+.nav,
+.nested-columns,
+.footer {
+  background-color: white; }
+
+/* ====================================================================================================================
+ Calendar list styles
+ ==================================================================================================================== */
+/*.calendar-wrapper {
+}*/
+.calendar .date {
+  text-align: center;
+  margin-bottom: 5px; }
+
+.calendar ul {
+  width: 100%;
+  box-sizing: border-box; }
+  .calendar ul.weekdays {
+    display: none; }
+  .calendar ul.month-browser {
+    margin: 10px 0 20px; }
+    .calendar ul.month-browser li {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 12px;
+      display: inline;
+      border: none; }
+
+.calendar li {
+  border: 1px solid #E8E7E7;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: -1px; }
+  .calendar li.day, .calendar li .month {
+    display: inline; }
+  .calendar li.out-of-range {
+    display: none;
+    background-color: #F7F7F8;
+    color: #A0A3A1; }
+  .calendar li a {
+    color: #71A583; }
+    .calendar li a:hover {
+      color: #F77B22; }
+
+/* ====================================================================================================================
+style rows
+==================================================================================================================== */
+.two-columns {
+  position: relative;
+  text-align: center;
+  margin-bottom: 1em;
+  display: inline;
+  width: 100%;
+  max-width: 1000px;
+  margin: 1em auto;
+  zoom: 1;
+  padding: 0; }
+  .two-columns:before, .two-columns:after {
+    content: "";
+    display: table; }
+  .two-columns:after {
+    clear: both; }
+  .two-columns > div {
+    float: left;
+    margin-right: 2%;
+    box-sizing: border-box;
+    height: 7em; }
+  .two-columns div.left-column, .two-columns .right-column {
+    background-color: white;
+    height: 8em; }
+    .two-columns div.left-column img.auction-logo, .two-columns .right-column img.auction-logo {
+      height: 100px;
+      width: 140px; }
+    .two-columns div.left-column p, .two-columns .right-column p {
+      margin-bottom: 0; }
+  .two-columns .left-column {
+    padding-top: 0;
+    width: 49%; }
+  .two-columns .right-column {
+    padding-top: 0;
+    width: 49%;
+    margin-right: 0;
+    float: left; }
+
+.three-columns {
+  padding-top: 0;
+  margin-bottom: 1em; }
+  .three-columns .start-cat {
+    padding: 0;
+    width: 100%; }
+    .three-columns .start-cat > div {
+      float: left;
+      margin-right: 2%;
+      box-sizing: border-box;
+      height: 7em; }
+    .three-columns .start-cat p {
+      padding-top: 5px;
+      height: 14px;
+      color: #666666; }
+    .three-columns .start-cat div {
+      height: 6em; }
+  .three-columns .footer-font {
+    font-size: 9px;
+    color: #222222; }
+  .three-columns div {
+    background-color: #F7F7F8;
+    width: 32%;
+    margin-right: 2%;
+    margin-top: 2%; }
+    .three-columns div .first-column, .three-columns div .second-column, .three-columns div .fourth-column, .three-columns div .fifth-column, .three-columns div .seventh-column, .three-columns div .eighth-column {
+      text-align: center;
+      width: 32%;
+      padding: 0; }
+      .three-columns div .first-column > div, .three-columns div .second-column > div, .three-columns div .fourth-column > div, .three-columns div .fifth-column > div, .three-columns div .seventh-column > div, .three-columns div .eighth-column > div {
+        float: left;
+        margin-right: 2%;
+        box-sizing: border-box;
+        height: 7em; }
+    .three-columns div .third-column, .three-columns div .sixth-column, .three-columns div .ninth-column {
+      text-align: center;
+      width: 32%;
+      padding: 0;
+      margin-right: 0;
+      float: right; }
+      .three-columns div .third-column > div, .three-columns div .sixth-column > div, .three-columns div .ninth-column > div {
+        float: left;
+        margin-right: 2%;
+        box-sizing: border-box;
+        height: 7em; }
+
+.six-columns {
+  background-color: #e6e6e6;
+  margin-bottom: 1em; }
+  .six-columns div {
+    background-color: #b3b3b3;
+    width: 15%; }
+  .six-columns .sixth-column {
+    margin-right: 0;
+    float: right; }
+
+.varying-columns {
+  background-color: #e6e6e6;
+  margin-bottom: 1em; }
+  .varying-columns div {
+    background-color: #b3b3b3; }
+  .varying-columns .first-column {
+    width: 15%; }
+  .varying-columns .second-column {
+    width: 32%; }
+  .varying-columns .third-column {
+    width: 49%; }
+  .varying-columns .third-column {
+    margin-right: 0;
+    float: right; }
+
+/* End style rows */
+/* ====================================================================================================================
+footer styles
+==================================================================================================================== */
+.footer {
+  text-align: center;
+  vertical-align: middle;
+  line-height: inherit; }
+
+.footer {
+  color: white;
+  height: 1em;
+  content: "";
+  font-style: italic;
+  background: #999999;
+  font-size: 10px; }
+
+.site-index {
+  display: none; }
+
+.sitemap {
+  background: #999999;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 14px; }
+
+ul.sitemap-features li {
+  display: inline;
+  font-size: 11px;
+  position: relative;
+  padding: 10px; }
+  ul.sitemap-features li a {
+    color: #333333; }
+    ul.sitemap-features li a:hover {
+      color: #ca1407; }
+
+div.wrapper-footer {
+  background: #999999;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  position: relative;
+  width: 100%; }
+
+/* ====================================================================================================================
+End Mobile styles
+==================================================================================================================== */
+/* ====================================================================================================================
+Break point 576px => 36 em
+==================================================================================================================== */
+@media screen and (min-width: 36em) {
+  nav .search {
+    float: right;
+    position: relative; } }
+
+/* ====================================================================================================================
+Break point 1em => 16px so this is 768px (tablet/iPad)
+==================================================================================================================== */
+@media screen and (min-width: 48em) {
+  body {
+    background-color: #E8E7E7; }
+  header {
+    height: 3em; }
+  .nav {
+    margin-bottom: 1em; }
+  body {
+    margin: auto; }
+  .site-index {
+    display: inline; } }
+
+/* ====================================================================================================================
+Break point 1000px => 62.5em
+==================================================================================================================== */
+@media screen and (min-width: 62.5em) {
+  nav .menu {
+    float: left;
+    position: relative;
+    cursor: default; } }
+
+/* @import 'carousel'; // not needed for the events page */
+body, ul, li {
+  margin: 0;
+  padding: 0; }
+
+/* ====================================================================================================================
+ Calendar list view (default)
+ ==================================================================================================================== */
+.main {
+  padding: 0; }
+  .main .calendar-wrapper {
+    margin: 0; }
+
+.calendar-title {
+  font-weight: normal;
+  text-align: center; }
+
+.calendar {
+  width: 100%;
+  text-align: center; }
+  .calendar .date {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 21px; }
+  .calendar li {
+    border: 1px solid #E8E7E7;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    height: auto;
+    margin-bottom: -1px; }
+    .calendar li .circle {
+      display: block; }
+    .calendar li.day, .calendar li .month {
+      display: inline; }
+    .calendar li.out-of-range {
+      display: none;
+      background-color: #F7F7F8;
+      color: #A0A3A1; }
+    .calendar li div.multiple-event-indicator {
+      display: none; }
+  .calendar ul {
+    width: 100%;
+    box-sizing: border-box; }
+    .calendar ul.weekdays {
+      display: none; }
+    .calendar ul.month-browser {
+      margin: 10px 0 20px; }
+      .calendar ul.month-browser li {
+        overflow: visible !important;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 300;
+        display: block;
+        width: 33.3%;
+        float: left;
+        border: 0;
+        padding: 0;
+        height: auto; }
+        .calendar ul.month-browser li.calendar-nav {
+          border: 0; }
+        .calendar ul.month-browser li span.calendar-nav {
+          color: initial; }
+        .calendar ul.month-browser li .arrow-nav {
+          position: relative;
+          font-size: 30px;
+          margin: 0 40px;
+          bottom: 6px; }
+  .calendar ul.day-list-hide {
+    display: none; }
+  .calendar .april-month {
+    display: block; }
+  .calendar .march-month {
+    display: block; }
+  .calendar .feb-month {
+    display: block; }
+  .calendar .default-month {
+    display: block; }
+  .calendar .default-month-hide {
+    display: none; }
+  .calendar .next-month-hide {
+    display: none; }
+  .calendar .prev-month-hide {
+    display: none; }
+  .calendar .no-event {
+    display: none; }
+
+.show-info {
+  display: block;
+  font-size: 12px;
+  padding: 5px;
+  margin-bottom: 2px;
+  line-height: 13px;
+  background: #F3F7F4;
+  color: #666666;
+  text-decoration: none;
+  height: 80px; }
+  .show-info span.auctioneer-name {
+    text-decoration: underline;
+    color: #71A583; }
+    .show-info span.auctioneer-name:hover {
+      color: #F77B22; }
+
+.show-info-list-hide {
+  display: none; }
+
+.overlay-wrapper {
+  display: none; }
+
+.switch {
+  margin-top: 6px;
+  text-align: left; }
+
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden; }
+
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+input.cmn-toggle-round-flat + label {
+  padding: 2px;
+  width: 120px;
+  height: 15px;
+  margin: 0 auto;
+  background-color: #dddddd;
+  border-radius: 60px;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s; }
+
+input.cmn-toggle-round-flat + label:before, input.cmn-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: ""; }
+
+input.cmn-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #fff;
+  border-radius: 60px;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s; }
+
+input.cmn-toggle-round-flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 55px;
+  background-color: #dddddd;
+  border-radius: 52px;
+  -webkit-transition: margin 0.4s, background 0.4s;
+  transition: margin 0.4s, background 0.4s; }
+
+input.cmn-toggle-round-flat:checked + label:before {
+  padding-left: 12px;
+  padding-top: 0.5px; }
+
+input.cmn-toggle-round-flat:checked + label:after {
+  margin-left: 60px; }
+
+/* ====================================================================================================================
+ Calendar grid toggle view mobile
+ ==================================================================================================================== */
+.calendar-title {
+  font-weight: normal;
+  text-align: center; }
+
+.calendar-wrapper {
+  display: inline;
+  overflow: hidden;
+  width: 98.14814814814815%;
+  margin: 0 0.9259259259259258%;
+  position: relative; }
+
+.calendar-grid {
+  position: relative; }
+  .calendar-grid li {
+    display: block;
+    float: left;
+    width: 14.2857142857%;
+    padding: 2px;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    margin-bottom: -1px;
+    height: 57px; }
+    .calendar-grid li:last-child {
+      margin-right: 0; }
+    .calendar-grid li .multiple-event-indicator {
+      display: block;
+      text-align: right;
+      font-size: 9px;
+      margin-top: 8px;
+      color: #F77B22;
+      cursor: pointer; }
+    .calendar-grid li .month, .calendar-grid li .day {
+      display: none; }
+    .calendar-grid li:hover {
+      background-color: #B4CFBE; }
+      .calendar-grid li:hover .circle {
+        background: orange;
+        cursor: pointer; }
+      .calendar-grid li:hover .date {
+        color: #ffffff; }
+    .calendar-grid li.current-day {
+      border: 3px solid #8FB79D; }
+    .calendar-grid li div.overlay-side {
+      position: absolute;
+      background: white;
+      max-height: 250px; }
+    .calendar-grid li div.overlay-side-hide {
+      display: none; }
+  .calendar-grid li.out-of-range {
+    display: block;
+    background-color: #F7F7F8;
+    color: #A0A3A1; }
+  .calendar-grid ul {
+    width: 100%;
+    box-sizing: border-box;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    clear: both; }
+    .calendar-grid ul.weekdays {
+      text-align: center;
+      line-height: 20px;
+      border: none;
+      display: block; }
+      .calendar-grid ul.weekdays li {
+        text-align: center;
+        line-height: 20px;
+        border: none;
+        margin-bottom: 3px;
+        color: #666666;
+        font-size: 11px;
+        height: 16px; }
+        .calendar-grid ul.weekdays li:hover {
+          background-color: inherit; }
+        .calendar-grid ul.weekdays li.day-of-week-grid {
+          display: none; }
+    .calendar-grid ul.month-browser {
+      margin-bottom: 0;
+      margin-top: 10px; }
+      .calendar-grid ul.month-browser li {
+        overflow: visible !important;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 300;
+        display: block;
+        width: 33.3%;
+        float: left;
+        border: 0;
+        padding: 0;
+        height: auto; }
+        .calendar-grid ul.month-browser li.calendar-nav {
+          border: 0; }
+        .calendar-grid ul.month-browser li span.calendar-nav {
+          color: #71A583;
+          font-weight: inherit; }
+    .calendar-grid ul.month-browser li:hover {
+      background-color: inherit; }
+  .calendar-grid .date {
+    display: block;
+    text-align: left;
+    font-size: 25px;
+    padding-left: 5px;
+    color: #cccccc; }
+  .calendar-grid .show-info {
+    cursor: pointer;
+    display: none;
+    position: relative;
+    font-size: 9px;
+    line-height: 11px;
+    padding-top: 1px;
+    height: 17px; }
+    .calendar-grid .show-info .auction-type, .calendar-grid .show-info .summary-mobile {
+      display: none; }
+  .calendar-grid ul.day-list {
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    border: none; }
+  .calendar-grid .day-list-hide {
+    display: none; }
+  .calendar-grid .calendar-day-list {
+    border-top: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    margin-bottom: -1px; }
+    .calendar-grid .calendar-day-list:last-child {
+      border-bottom: none; }
+  .calendar-grid .show-info-list {
+    display: inherit;
+    font-size: 12px;
+    padding: 5px;
+    line-height: 13px;
+    line-height: 13px;
+    color: #666666;
+    text-decoration: none;
+    height: 80px; }
+    .calendar-grid .show-info-list span.auctioneer-name {
+      text-decoration: underline;
+      color: #71A583; }
+      .calendar-grid .show-info-list span.auctioneer-name:hover {
+        color: #8FB79D; }
+  .calendar-grid .circle {
+    height: 20px;
+    width: 20px;
+    background: #B4CFBE;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 0; }
+  .calendar-grid .no-event {
+    display: inline-block;
+    text-align: center;
+    font-weight: 500;
+    color: #A0A3A1; }
+
+/* ====================================================================================================================
+Calendar list and grid (desktop) Break point 1em => 16px so this is 768px (tablet/iPad)
+==================================================================================================================== */
+@media screen and (min-width: 48em) {
+  main {
+    padding-right: 0.5em; }
+  .switch {
+    margin-top: 0;
+    padding-top: 10px;
+    margin-bottom: 17px; }
+  .calendar.weekdays {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    border: none;
+    padding: 10px;
+    display: block; }
+  .calendar ul.weekdays li.day-of-week-grid {
+    display: block; }
+  .calendar ul.weekdays li {
+    font-size: 13px; }
+    .calendar ul.weekdays li.day-of-week {
+      display: none; }
+  .calendar li {
+    height: auto; }
+    .calendar li div.multiple-event-indicator {
+      display: none; }
+    .calendar li .circle {
+      display: none; }
+  .calendar .calendar-day-list {
+    display: none; }
+  .calendar .no-event {
+    display: none; }
+  .calendar-grid .show-info {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    font-size: 9px;
+    line-height: 11px;
+    padding-top: 1px;
+    height: 17px; }
+    .calendar-grid .show-info .auction-type, .calendar-grid .show-info .summary-mobile {
+      display: none; }
+  .calendar-grid li {
+    height: 180px; }
+    .calendar-grid li.day-of-week-grid {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 5px; }
+  .calendar-grid.weekdays {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    border: none;
+    padding: 10px;
+    display: block; }
+    .calendar-grid.weekdays li.day-of-week {
+      display: none; }
+  .calendar-grid ul.weekdays li.day-of-week-grid {
+    display: block; }
+  .calendar-grid ul.weekdays li {
+    font-size: 15px; }
+    .calendar-grid ul.weekdays li.day-of-week {
+      display: none; }
+  .calendar-grid li {
+    height: 180px; }
+    .calendar-grid li div.multiple-event-indicator {
+      display: block;
+      font-size: 30px; }
+    .calendar-grid li .circle {
+      display: none; } }
+
+.overlay-wrapper {
+  box-sizing: border-box;
+  display: block;
+  max-height: 480px;
+  max-width: 250px;
+  position: absolute;
+  padding-bottom: 12px;
+  z-index: 2000;
+  box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+  left: -259px;
+  top: 0; }
+  .overlay-wrapper .overlay-header {
+    background-color: #B4CFBE;
+    margin: 1px;
+    padding: 20px;
+    font-size: 16px; }
+    .overlay-wrapper .overlay-header .overlay-time {
+      margin-left: 10px; }
+  .overlay-wrapper .overlay-content {
+    font-weight: normal;
+    margin: 17px 20px;
+    margin-bottom: 0;
+    max-width: 300px;
+    text-align: left; }
+    .overlay-wrapper .overlay-content a {
+      color: #666666; }
+    .overlay-wrapper .overlay-content .auctioneer {
+      font-size: 21px; }
+    .overlay-wrapper .overlay-content .auction-details {
+      font-size: 12px;
+      line-height: 13px;
+      margin-bottom: 15px; }
+    .overlay-wrapper .overlay-content .summary {
+      font-size: 11px; }
+    .overlay-wrapper .overlay-content .auctioneer-logo {
+      margin-top: 7px; }
+      .overlay-wrapper .overlay-content .auctioneer-logo .test-me {
+        background-image: url("../../staceys-logo.png"); }
+  .overlay-wrapper .overlay-footer {
+    background: #F77B22;
+    width: 50%;
+    margin: auto;
+    font-size: 12px;
+    text-align: center;
+    padding: 8px;
+    margin-top: 20px; }
+    .overlay-wrapper .overlay-footer:hover {
+      background: #ED721A; }
+    .overlay-wrapper .overlay-footer a {
+      color: #ffffff; }
+      .overlay-wrapper .overlay-footer a:hover {
+        color: #ffffff;
+        text-decoration: none; }
+
+.overlay-wrapper-hide {
+  display: none; }

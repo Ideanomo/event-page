@@ -1,0 +1,11 @@
+$font-family: "Open Sans", sans-serif;
+$primary-color: $brand-tertiary-darkest;
+
+body, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+@import 'module/calendar';
+@import 'module/calendar-grid';
+@import 'module/overlay';

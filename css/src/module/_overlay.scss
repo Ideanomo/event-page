@@ -1,0 +1,83 @@
+.overlay-wrapper {
+  box-sizing: border-box;
+  display: block;
+  max-height: 480px;
+  max-width: 250px;
+  position: absolute;
+  padding-bottom: 12px;
+  z-index: 2000;
+  box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+  left: -259px;
+  top: 0;
+
+  & .overlay-header {
+    background-color: $brand-primary-lightest;
+    margin: 1px;
+    padding: 20px;
+    font-size: 16px;
+    & .overlay-time {
+      margin-left: 10px;
+    }
+  }
+
+  & .overlay-content {
+    font-weight: normal;
+    margin: 17px 20px;
+    margin-bottom: 0;
+    max-width: 300px;
+    text-align: left;
+
+    & a {
+      color: $gray60;
+    }
+
+    & .auctioneer {
+      font-size: 21px;
+    }
+
+    & .auction-details {
+      font-size: 12px;
+      line-height: 13px;
+      margin-bottom: 15px;
+    }
+
+    & .summary {
+      font-size: 11px;
+    }
+
+    & .auctioneer-logo {
+      margin-top: 7px;
+      & .test-me {
+        background-image: url("../../staceys-logo.png");
+      }
+    }
+  }
+
+  .overlay-footer {
+    background: $brand-secondary-alert;
+    width: 50%;
+    margin: auto;
+    font-size: 12px;
+    text-align: center;
+    padding: 8px;
+    margin-top: 20px;
+
+    &:hover {
+      background: $brand-secondary-alert-dark;
+    }
+
+    & a {
+      color: #ffffff;
+
+      &:hover {
+        color: #ffffff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.overlay-wrapper-hide {
+  display: none;
+}

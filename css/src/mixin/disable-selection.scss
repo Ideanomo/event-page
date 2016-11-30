@@ -1,0 +1,6 @@
+@mixin disable-selection {
+    user-drag: none;
+    user-select: none;
+    tap-highlight-color:rgba(0,0,0,0);
+    touch-callout: none;
+}

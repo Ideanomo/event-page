@@ -1,0 +1,7 @@
+@mixin transform($spec, $style:preserve-3d) {
+    transform: $spec;
+    -o-transform: $spec;
+    -ms-transform: $spec;
+    -moz-transform: $spec;
+    -webkit-transform: $spec;
+}

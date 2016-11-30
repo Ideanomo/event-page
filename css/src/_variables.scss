@@ -1,0 +1,53 @@
+// Variables ================================================================= /
+
+// White - Grays - Black
+$black:                       hsl(0, 0%, 0%);
+$gray90:                      hsl(0, 0%, 10%);
+$gray80:                      hsl(0, 0%, 20%);
+$gray70:                      hsl(0, 0%, 30%);
+$gray60:                      hsl(0, 0%, 40%);
+$gray50:                      hsl(0, 0%, 50%);
+$gray40:                      hsl(0, 0%, 60%);
+$gray30:                      hsl(0, 0%, 70%);
+$gray20:                      hsl(0, 0%, 80%);
+$gray10:                      hsl(0, 0%, 90%);
+$white:                       hsl(0, 0%, 100%);
+
+// Bot green
+$brand-primary-lightest:     #B4CFBE;
+$brand-primary-lighter:      #8FB79D;
+$brand-primary:              #71A583;
+$brand-primary-darker:       #588969;
+$brand-primary-darkest:      #40644C;
+
+
+// Bot red
+$brand-secondary-lightest:    #F8473A;
+$brand-secondary-lighter:     #F62213;
+$brand-secondary:             #ca1407;
+$brand-secondary-darker:      #9D1006;
+$brand-secondary-darkest:     #4F0803;
+$brand-secondary-alert:       #F77B22;
+$brand-secondary-alert-dark:  #ED721A;
+
+
+// Bot grey
+$brand-tertiary-darkest:     #000000;
+$brand-tertiary-darker:      #A0A3A1;
+$brand-tertiary:             #C2C5C3;
+$brand-tertiary-lighter:     #E8E7E7;
+$brand-tertiary-lightest:    #F7F7F8;
+
+// Typography variables
+$headings:      #222222;
+$base-color:    $gray70;
+$font-family:   "Open Sans";
+$line-height:   1;
+$vertical-measure: 1em; // establish a vertical distance for margins equal to line-height
+$calendar-font: #666666;
+
+// Toggle switch
+$uncheckedText: "list";
+$checkedText: "grid";
+
+

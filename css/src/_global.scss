@@ -1,0 +1,555 @@
+/* ====================================================================================================================
+Global styles
+===================================================================================================================== */
+
+// set up body and container padding/widths/etc
+body {
+  background-color: $white;
+  margin: auto;
+  width: 100%;
+}
+.main {
+  padding: 0 1em;
+  margin: auto;
+  max-width: $max-width;
+
+}
+.container {
+  width: 100%;
+  max-width: $max-width;
+  margin: auto;
+  background-color: $white
+}
+
+// tell content elements to act like rows for containing columns
+.two-columns,
+.three-columns,
+.six-columns,
+.varying-columns,
+.nested-columns,
+.offset-columns {
+  @include row; // include row mixin
+}
+
+/* header styles */
+header {
+  background: $brand-tertiary-lightest;
+  padding: 10px 10px;
+}
+
+/* clearfix*/
+.clearfix:before, .clearfix:after {
+  content:"";
+  display: table;
+}
+
+.clearfix:after {
+  clear:both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+p {
+  text-align: center;
+}
+
+/* ===================================================================================================================
+View and filter capsules
+==================================================================================================================== */
+.capsule-wrapper {
+  width: 100%;
+  background: red;
+}
+div.container-toggle {
+  display:none;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.view-capsule {
+  width: 10%;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 10px 0 0 10px;
+}
+.filter-capsule {
+  width: 10%;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 0 10px 10px 0;
+  right: 2px;
+}
+.view-capsule.toggle, .filter-capsule.toggle {
+  color: #777;
+  border: 2px solid #777;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  float: left;
+  background-color: rgba(250,250,250,1);
+}
+/* End view and filter capsule*/
+
+
+/* For IE 6/7 (trigger hasLayout) */
+header {
+  zoom:1;
+}
+
+// bot logo
+.logo  img {
+  width: 85px;
+    height: 41px;
+}
+
+// menu icon
+.menu svg {
+    height:40px;
+    width: 40px;
+}
+
+.search-icon {
+  // float: right;
+  & svg {
+    height:30px;
+    width: 30px;
+  }
+}
+
+/* ====================================================================================================================
+ primary nav styles
+ ==================================================================================================================== */
+.nav-wrapper {
+  background: $brand-tertiary-lightest;
+  width: 100%;
+}
+
+.nav {
+  width: 100%;
+  position: relative;
+}
+
+.nav ul {
+  list-style: none;
+   padding: 0;
+  background: $brand-tertiary-lightest;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  display: table;
+  }
+
+.nav li {
+  display: table-cell;
+  &.logo {
+    margin: auto;
+    width: inherit;
+    padding-right: 13px;
+  }
+}
+
+nav .menu {
+  float: left;
+  position: relative;
+  left: 11px;
+  top: 5px;
+}
+
+.two-columns .view-all, .view-all {
+  margin-top: 12px;
+  padding-top: 6px;
+  padding-bottom:0;
+  @include centre;
+  background: none;
+  width: 100%;
+  height: 30px;
+}
+
+/* ====================================================================================================================
+secondary nav styles
+====================================================================================================================*/
+.secondary-nav {
+  transition: opacity 0.5s, width 0.5s ease;
+  opacity: 1;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  overflow: hidden;
+  & ul {
+    background: $gray20;
+    text-align: left;
+    margin: 0 auto;
+    & a.close {
+      font-size: 1em;
+      text-align: right;
+        border: none;
+      &:hover {
+        color: $brand-secondary;
+      }
+    }
+
+    & a .contact-us {
+      text-align: left;
+    }
+  }
+}
+
+.secondary-nav a {
+  border-bottom-style: solid;
+  border-bottom-color: $gray40;
+  border-bottom-width: 0.5px;
+  color: $gray50;
+  display: block;
+  font-weight: 400;
+  height: 3.6em;
+  letter-spacing: 0.1em;
+  line-height: 3.5em;
+  padding-bottom: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 0;
+  position: relative;
+  text-decoration: none;
+  &:hover {
+    color: $gray10;
+  }
+}
+
+a.contact-us {
+  font-size: 12px;
+  padding-bottom: 81px;
+}
+
+.secondary-nav li {
+  transition: background-color 0.5s ease;
+  &:hover {
+    background-color: $gray30;
+    & a.home {
+      background-color: transparent;
+    }
+    &.home-base {
+      background: none;
+    }
+  }
+  &:last-child {
+    border-bottom: none;
+    &:hover {
+      background: none;
+    }
+  }
+  &:first-child:hover {
+    background: none;
+  }
+  & a.home {
+    position: relative;
+    top: -25px;
+    border-bottom: none;
+    & img:hover {
+      background: none;
+    }
+  }
+}
+
+/*.menu-content {
+  transition: opacity 0.5s, width 0.5s;
+  width: 250px;
+  *//*animated transition*//*
+}*/
+
+ .menu-hidden {
+   transition: opacity 0.5s, width 0.5s;
+   width: 0;
+   //  visibility: hidden;
+   display: none;
+   opacity: 0;
+}
+ /* End secondary nav styles */
+
+// do not use the row mixin for the container because the direct child selector will float /
+
+section div {
+  padding: 1em 0;
+}
+
+.nav,
+.nested-columns,
+.footer {
+  background-color: white;
+ }
+
+/* ====================================================================================================================
+ Calendar list styles
+ ==================================================================================================================== */
+/*.calendar-wrapper {
+}*/
+.calendar .date {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.calendar ul {
+  width: 100%;
+  box-sizing: border-box;
+  &.weekdays {
+    display: none;
+  }
+  &.month-browser {
+    margin:10px 0 20px;
+    & li {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 12px;
+      display: inline;
+      border: none
+    }
+  }
+}
+
+.calendar li {
+  border: 1px solid $brand-tertiary-lighter;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: -1px;
+  &.day, .month {
+    display: inline;
+  }
+  &.out-of-range {
+    display: none;
+    background-color: $brand-tertiary-lightest;
+    color: $brand-tertiary-darker;
+  }
+  & a {
+    color: $brand-primary;
+    &:hover {
+      color: $brand-secondary-alert;
+    }
+  }
+}
+
+
+/* ====================================================================================================================
+style rows
+==================================================================================================================== */
+.two-columns {
+  position: relative;
+  text-align: center;
+  margin-bottom: 1em;
+  display: inline;
+  @include row;
+  & div.left-column, .right-column {
+    background-color: white;
+    height: 8em;
+    & img.auction-logo {
+      height: 100px;
+      width: 140px;
+    }
+    & p {
+      margin-bottom: 0;
+    }
+  }
+
+  .left-column {
+    padding-top: 0;
+    width: 49%;
+  }
+  .right-column {
+    padding-top: 0;
+    width: 49%;
+    @include last-2;
+  }
+}
+
+.three-columns {
+  padding-top: 0;
+  margin-bottom: 1em;
+
+  .start-cat {
+    @include nesting;
+    width: columns(6);
+    & p {
+      padding-top: 5px;
+      height: 14px;
+      color: $gray60;
+    }
+
+    & div {
+      height: 6em;
+    }
+  }
+
+  .footer-font {
+    font-size: 9px;
+    color: $headings;
+  }
+
+  div {
+    background-color: $brand-tertiary-lightest;
+    width: columns(2, 6);
+    margin-right: gutter(6); // declare vertical gutter with width of parent in columns as arg
+    margin-top: gutter(6);  // added horizontal gutter with width of parent in columns as arg
+
+    .first-column, .second-column, .fourth-column, .fifth-column, .seventh-column, .eighth-column {
+      text-align: center;
+      width:columns(2, 6); // declare width in columns
+      @include nesting; // remove padding from parent container and float child elements
+
+    }
+    .third-column, .sixth-column, .ninth-column {
+      text-align: center;
+      width: columns(2, 6);
+      @include nesting;
+      @include last;
+    }
+  }
+}
+
+.six-columns {
+  background-color: $gray10;
+  margin-bottom: 1em;
+
+  div {
+    background-color: $gray30;
+    width: columns(1); // declare width in columns
+  }
+  .sixth-column {
+    @include last; // remove margin-right from last element in container
+  }
+}
+
+.varying-columns {
+  background-color: $gray10;
+  margin-bottom: 1em;
+  div {
+    background-color: $gray30;
+  }
+  .first-column {
+    width: columns(1);  // declare width in columns
+  }
+  .second-column {
+    width: columns(2);  // declare width in columns
+  }
+  .third-column {
+    width: columns(3);  // declare width in columns
+  }
+  .third-column {
+@include last;   // remove margin-right from last element in container
+  }
+} /* End style rows */
+
+/* ====================================================================================================================
+footer styles
+==================================================================================================================== */
+.footer {
+ @include centre; // include mixin to centre element contents
+}
+
+.footer {
+  color: $white;
+  height: $vertical-measure *1;
+  content:"";
+  font-style: italic;
+  background: $gray40;
+  font-size: 10px;
+}
+
+.site-index {
+  display: none;
+}
+
+.sitemap {
+  background: $gray40;
+  width: 100%;
+  padding-top:12px;
+  padding-bottom: 14px;
+}
+
+ul.sitemap-features li {
+  display: inline;
+  font-size: 11px;
+  position: relative;
+  padding: 10px;
+  & a {
+    color: $gray80;
+  &:hover {
+    color: $brand-secondary;
+    }
+  }
+}
+
+div.wrapper-footer {
+  background: $gray40;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  position: relative;
+  width: 100%;
+}
+
+
+/* ====================================================================================================================
+End Mobile styles
+==================================================================================================================== */
+
+/* ====================================================================================================================
+Break point 576px => 36 em
+==================================================================================================================== */
+@media screen and (min-width: 36em) {
+  nav .search {
+    float: right;
+    position: relative;
+   // right: 15px;
+  }
+}
+
+/* ====================================================================================================================
+Break point 1em => 16px so this is 768px (tablet/iPad)
+==================================================================================================================== */
+@media screen and (min-width: 48em) {
+
+  body {
+    background-color: $brand-tertiary-lighter;
+  }
+  header {
+    height: 3em;
+  }
+  .nav { // attribute selector
+    margin-bottom: $vertical-measure;
+  }
+  body {
+    margin: auto;
+  }
+
+  .site-index {
+    display: inline;
+  }
+}
+
+/* ====================================================================================================================
+Break point 1000px => 62.5em
+==================================================================================================================== */
+@media screen and (min-width: 62.5em) {
+  nav .search {
+  //  right: 45px;
+  }
+  nav .menu {
+    float: left;
+    position: relative;
+    cursor: default
+  }
+}
+
+
+
+
+
+
+
+
+
+

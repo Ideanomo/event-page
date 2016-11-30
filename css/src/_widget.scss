@@ -1,0 +1,52 @@
+.tab {
+  width: 50%;
+}
+
+.tabs {
+  padding: 0 10px;
+}
+
+.tabs ul {
+  z-index: 1;
+  position: relative;
+}
+
+.tab {
+  background-color: #f0f0f0;
+  border: 1px solid $gray20;
+  border-bottom: 0;
+  display: inline-block;
+}
+.tab a {
+  border-bottom: 1px solid $gray20;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.lot {
+  position: absolute;
+  right: 0;
+}
+
+.tabSelected a {
+  background-color: $brand-primary-lighter;
+  border-bottom: 1px solid $brand-primary;
+  color: $white;
+}
+
+.tabContent {
+  background-color: #ffffff;
+  border: 1px solid $gray20;
+  margin-top: -1px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.tab-base {
+  padding-top: 0;
+  padding-bottom: 0;
+}

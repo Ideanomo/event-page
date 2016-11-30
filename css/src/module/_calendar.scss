@@ -1,0 +1,490 @@
+/* ====================================================================================================================
+ Calendar list view (default)
+ ==================================================================================================================== */
+.main {
+    padding: 0;
+    & .calendar-wrapper {
+        margin: 0;
+    }
+}
+
+.calendar-title {
+    font-weight: normal;
+    text-align: center;
+}
+
+.calendar {
+    width: 100%;
+    text-align: center;
+
+    & .date {
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: 21px;
+    }
+
+    & li {
+
+        & .circle {
+            display: block;
+        }
+
+        border: 1px solid $brand-tertiary-lighter;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        height: auto;
+        margin-bottom: -1px;
+
+        &.day, .month {
+            display: inline;
+        }
+
+        &.out-of-range {
+            display: none;
+            background-color: $brand-tertiary-lightest;
+            color: $brand-tertiary-darker;
+        }
+
+        & div.multiple-event-indicator {
+            display: none;
+        }
+    }
+
+    & ul {
+        width: 100%;
+        box-sizing: border-box;
+
+        &.weekdays {
+            display: none;
+        }
+
+        &.month-browser {
+            margin: 10px 0 20px;
+
+            & li {
+                overflow: visible !important;
+                text-align: center;
+                font-size: 17px;
+                font-weight: 300;
+                display: block;
+                width: 33.3%;
+                float: left;
+                border: 0;
+                padding: 0;
+                height: auto;
+
+                &.calendar-nav {
+                    border: 0;
+                }
+                span.calendar-nav {
+                    color: initial;
+                }
+
+                .arrow-nav {
+                    position: relative;
+                    font-size: 30px;
+                    margin: 0 40px;
+                    bottom: 6px;
+                }
+            }
+        }
+    }
+
+    & ul.day-list-hide {
+        display: none;
+    }
+
+    //Month browser
+    .april-month {
+        display: block;
+    }
+
+    .march-month {
+        display: block;
+    }
+
+    .feb-month {
+        display: block;
+    }
+
+    .default-month {
+        display: block;
+    }
+
+    .default-month-hide {
+        display: none;
+    }
+
+    .next-month-hide {
+        display: none;
+    }
+
+    .prev-month-hide {
+        display: none;
+    }
+
+    .no-event {
+        display: none;
+    }
+}
+
+.show-info {
+    display: block;
+    font-size: 12px;
+    padding: 5px;
+    margin-bottom: 2px;
+    line-height: 13px;
+    background: #F3F7F4;
+    color: $calendar-font;
+    text-decoration: none;
+    height: 80px;
+
+    & span.auctioneer-name {
+        text-decoration: underline;
+        color: $brand-primary;
+        &:hover {
+            color: $brand-secondary-alert;
+        }
+    }
+}
+
+.show-info-list-hide {
+    display: none;
+}
+
+.overlay-wrapper {
+    display: none;
+}
+
+//Toggle round flat styles
+
+.switch {
+    margin-top: 6px;
+    text-align: left;
+}
+
+.cmn-toggle {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+}
+
+.cmn-toggle + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input.cmn-toggle-round-flat + label {
+    padding: 2px;
+    width: 120px;
+    height: 15px;
+    margin: 0 auto;
+    background-color: #dddddd;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    border-radius: 60px;
+    -webkit-transition: background 0.4s;
+    -moz-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s;
+}
+
+input.cmn-toggle-round-flat + label:before, input.cmn-toggle-round-flat + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+}
+
+input.cmn-toggle-round-flat + label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: #fff;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    border-radius: 60px;
+    -webkit-transition: background 0.4s;
+    -moz-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s;
+}
+
+input.cmn-toggle-round-flat + label:after {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    width: 55px;
+    background-color: #dddddd;
+    -webkit-border-radius: 52px;
+    -moz-border-radius: 52px;
+    -ms-border-radius: 52px;
+    -o-border-radius: 52px;
+    border-radius: 52px;
+    -webkit-transition: margin 0.4s, background 0.4s;
+    -moz-transition: margin 0.4s, background 0.4s;
+    -o-transition: margin 0.4s, background 0.4s;
+    transition: margin 0.4s, background 0.4s;
+}
+
+input.cmn-toggle-round-flat:checked + label {
+    // background-color: $brand-primary-lighter;
+    &:before {
+        padding-left: 12px;
+        padding-top: 0.5px;
+        // color: $brand-primary;
+    }
+}
+
+input.cmn-toggle-round-flat:checked + label:after {
+    margin-left: 60px;
+    //  background-color: $brand-primary-lighter;
+}
+
+// End Toggle styles
+
+/* ====================================================================================================================
+ Calendar grid toggle view mobile
+ ==================================================================================================================== */
+.calendar-title {
+    font-weight: normal;
+    text-align: center;
+}
+
+.calendar-wrapper {
+    display: inline;
+    overflow: hidden;
+    width: 98.14814814814815%;
+    margin: 0 0.9259259259259258%;
+    position: relative;
+}
+
+.calendar-grid {
+
+    position: relative;
+
+    & li {
+        display: block;
+        float: left;
+        width: 14.2857142857%;
+        padding: 2px;
+        box-sizing: border-box;
+        border-top: 1px solid #ccc;
+        margin-bottom: -1px;
+        height: 57px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        & .multiple-event-indicator {
+            display: block;
+            text-align: right;
+            font-size: 9px;
+            margin-top: 8px;
+            color: $brand-secondary-alert;
+            cursor: pointer;
+        }
+
+        & .month, .day {
+            display: none;
+        }
+
+        &:hover {
+            background-color: $brand-primary-lightest;
+            .circle {
+                background: orange;
+                cursor: pointer;
+            }
+
+            & .date {
+                color: #ffffff;
+            }
+        }
+        &.current-day {
+            border: 3px solid $brand-primary-lighter;
+        }
+
+        & div.overlay-side {
+            position: absolute;
+            background: white;
+            max-height: 250px;
+        }
+
+        div.overlay-side-hide {
+            display: none;
+        }
+    }
+
+    & li.out-of-range {
+        display: block;
+        background-color: #F7F7F8;;
+        color: #A0A3A1;
+    }
+
+    & ul {
+        width: 100%;
+        box-sizing: border-box;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        clear: both;
+
+        &.weekdays {
+            text-align: center;
+            line-height: 20px;
+            border: none;
+            display: block;
+
+            & li {
+                text-align: center;
+                line-height: 20px;
+                border: none;
+                margin-bottom: 3px;
+                color: #666666;
+                font-size: 11px;
+                height: 16px;
+
+                &:hover {
+                    background-color: inherit;
+                }
+
+                &.day-of-week-grid {
+                    display: none;
+                }
+            }
+        }
+
+        &.month-browser {
+            margin-bottom: 0;
+            margin-top: 10px;
+
+            & li {
+                overflow: visible !important;
+                text-align: center;
+                font-size: 17px;
+                font-weight: 300;
+                display: block;
+                width: 33.3%;
+                float: left;
+                border: 0;
+                padding: 0;
+                height: auto;
+
+                &.calendar-nav {
+                    border: 0;
+                }
+                span.calendar-nav {
+                    color: $brand-primary;
+                    font-weight: inherit;
+
+                }
+            }
+        }
+
+        &.month-browser li:hover {
+            background-color: inherit;
+        }
+    }
+
+    & .date {
+        display: block;
+        text-align: left;
+        font-size: 25px;
+        padding-left: 5px;
+        color: $gray20;
+    }
+
+    & .show-info {
+        cursor: pointer;
+        display: none;
+        position: relative;
+        font-size: 9px;
+        line-height: 11px;
+        padding-top: 1px;
+        height: 17px;
+        .auction-type, .summary-mobile {
+            display: none;
+        }
+    }
+    // Styles for single day events against calendar grid on mobile
+
+    ul {
+
+        &.day-list {
+            width: 100%;
+            box-sizing: border-box;
+            display: inline-block;
+            border: none;
+        }
+    }
+
+    .day-list-hide {
+        display: none;
+    }
+
+    .calendar-day-list {
+        border-top: 1px solid #ccc;
+        width: 100%;
+        box-sizing: border-box;
+        height: auto;
+        margin-bottom: -1px;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    .show-info-list {
+        display: inherit;
+        font-size: 12px;
+        padding: 5px;
+        line-height: 13px;
+        line-height: 13px;
+        color: $calendar-font;
+        text-decoration: none;
+        height: 80px;
+
+        & span.auctioneer-name {
+            text-decoration: underline;
+            color: $brand-primary;
+            &:hover {
+                color: $brand-primary-lighter;
+            }
+        }
+    }
+
+    & .circle {
+        height: 20px;
+        width: 20px;
+        background: $brand-primary-lightest;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        margin: auto;
+        margin-top: 0;
+    }
+
+    .no-event {
+        display: inline-block;
+        text-align: center;
+        font-weight: 500;
+        color: $brand-tertiary-darker;
+    }
+}
+
+
+
+
+
+

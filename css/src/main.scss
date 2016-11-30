@@ -1,0 +1,9 @@
+@import 'variables'; // global variables first so they're accessible to rest of stylesheets
+@import 'mixins'; // global mixins to use variables and be accessible to rest of stylesheets
+@import 'reset'; // reset styles simple
+@import 'typography'; // base typography system
+@import 'grid'; // grid systems functions and mixins
+/* @import 'widget'; // styles for js widget */
+@import 'global'; // global style rules last so they can use all the above stylesheets
+/* @import 'carousel'; // not needed for the events page */
+@import 'calendar'; // get styles for calendar feature

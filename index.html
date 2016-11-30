@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <!--
+    <meta name="viewport" content="width=device-width" /> -->
+
+    <!-- Mobile specific meta goodness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+    <!-- build:css css/styles.min.css -->
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+    <!-- endbuild -->
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700"/>
+
+    <title>Bid on this - The online home of UK auction houses</title>
+</head>
+<body>
+<div class="nav-wrapper">
+    <div class="container">
+        <header class="clearfix">
+            <nav class="nav clearfix">
+                <ul class="clearfix">
+                    <li><a href="#" class="menu" id="to-nav"><!--<img src="images/nav-icon.svg" alt="nav" />-->
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                             width="98px" height="98px" viewBox="0 0 98 98" enable-background="new 0 0 98 98" xml:space="preserve">
+                        <g>
+                            <path fill="#CA1407" d="M74,37.968C74,38.349,73.091,39,72.714,39H25.435C25.056,39,24,38.349,24,37.968v-6.306
+                                C24,31.282,25.056,31,25.435,31h47.279C73.091,31,74,31.282,74,31.662V37.968z"/>
+                            <path fill="#CA1407" d="M74,66.135C74,66.514,73.091,67,72.714,67H25.435C25.056,67,24,66.514,24,66.135v-6.308
+                                C24,59.448,25.056,59,25.435,59h47.279C73.091,59,74,59.448,74,59.827V66.135z"/>
+                            <path fill="#CA1407" d="M74,52.331C74,52.711,73.091,53,72.714,53H25.435C25.056,53,24,52.711,24,52.331v-6.306
+                                C24,45.646,25.056,45,25.435,45h47.279C73.091,45,74,45.646,74,46.025V52.331z"/>
+                        </g>
+                        </svg>
+                        <!-- end Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)-->
+                    </a></li>
+                    <li class="logo">
+                        <a href=""><img src="logo.png" alt="logo"/></a>
+                    </li>
+                    <li class="search">
+                        <a href="#" class="search-icon">
+                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="74px" height="88px" viewBox="0 0 74 88" enable-background="new 0 0 74 88" xml:space="preserve">
+                    <path fill="none" stroke="#CA1407" stroke-width="12" stroke-miterlimit="10" d="M61.468,35.521
+                    c0,15.399-11.88,27.882-26.539,27.882c-14.654,0-26.536-12.482-26.536-27.882c0-15.394,11.881-27.875,26.536-27.875
+                    C49.588,7.646,61.468,20.127,61.468,35.521z"/>
+                    <line fill="none" stroke="#CA1407" stroke-width="8" stroke-miterlimit="10" x1="50.833" y1="59.851" x2="67.7" y2="83.487"/>
+                    </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+</div>
+<!-- Drop-down secondarynav -->
+<div id="drop-down" class="menu-hidden">
+    <ul class="menu-content">
+        <li>
+            <a href="#" id="close-menu" class="close">&#88;</a>
+            <br>
+            <br>
+        </li>
+        <li class="home-base">
+            <a href="#" class="home"><img src="logo.png" alt="logo"/></a>
+        </li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">CALENDAR</a></li>
+        <li><a href="#">FAVOURITES</a></li>
+        <li><a href="#">ACCOUNT</a></li>
+        <li><a href="#">SEARCH</a></li>
+        <li>
+            <a href="https://wwww.bidonthis.co.uk" class="contact-us">www.bidonthis.co.uk
+                <p class="contact-us"></p>
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- &lt;!&ndash; end drop-down secondarynav &ndash;&gt;-->
+
+<!-- Main content -->
+<div class="container">
+    <div class="main">
+        <!-- Start calendar list-->
+        <div class="clearfix">
+        </div>
+        <div class="calendar-wrapper">
+            <div class="calendar">
+                <!-- Toggle button -->
+                <div class="switch">
+                    <input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                    <label class='test-me' for="cmn-toggle-4"></label>
+                </div>
+                <!-- End Toggle button -->
+
+                <ul class="month-browser clearfix">
+                    <li class="calendar calendar-nav prev" data-month="prev"><span class="calendar-nav arrow-nav"
+                                                                                      href="">&lt;</span></li>
+                    <li class="calendar-nav default" id="current-month" data-month="default">March 2016</li>
+                    <li class="calendar calendar-nav next" data-month="next"><span class="calendar-nav arrow-nav"
+                                                                                      href="">&gt;</span></li>
+                </ul>
+                <!-- Days of the week label -->
+                <ul class="weekdays">
+                    <li class="day-of-week">Su</li>
+                    <li class="day-of-week-grid">Sunday</li>
+                    <li class="day-of-week">Mo</li>
+                    <li class="day-of-week-grid">Monday</li>
+                    <li class="day-of-week">Tu</li>
+                    <li class="day-of-week-grid">Tuesday</li>
+                    <li class="day-of-week">We</li>
+                    <li class="day-of-week-grid">Wednesday</li>
+                    <li class="day-of-week">Th</li>
+                    <li class="day-of-week-grid">Thursday</li>
+                    <li class="day-of-week">Fr</li>
+                    <li class="day-of-week-grid">Friday</li>
+                    <li class="day-of-week">Sa</li>
+                    <li class="day-of-week-grid">Saturday</li>
+                </ul>
+                <!-- End days of the week label -->
+
+                <!-- Weekdays for February -->
+                <div class="prev-month-hide prev-month" id="prev">
+                    <ul class="days">
+                        <li class="out-of-range calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sun,</span> <span class="month">Jan</span>
+                                31
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Mon,</span> <span class="month">Feb</span>
+                                1
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Tues,</span> <span class="month">Feb</span>
+                                2
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Wed,</span> <span class="month">Feb</span>
+                                3
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Thu,</span> <span class="month">Feb</span>
+                                4
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Fri,</span> <span class="month">Feb</span>
+                                5
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sat,</span> <span class="month">Feb</span>
+                                6
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="days">
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sun,</span> <span class="month">Feb</span>
+                                7
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Mon,</span> <span class="month">Feb</span>
+                                8
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Tues,</span> <span class="month">Feb</span>
+                                9
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Wed,</span> <span class="month">Feb</span>
+                                10
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Thu,</span> <span class="month">Feb</span>
+                                11
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Fri,</span> <span class="month">Feb</span>
+                                12
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sat,</span> <span class="month">Feb</span>
+                                13
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="days">
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sun,</span> <span class="month">Feb</span>
+                                14
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Mon,</span> <span class="month">Feb</span>
+                                15
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Tue,</span> <span class="month">Feb</span>
+                                16
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Wed,</span> <span class="month">Feb</span>
+                                17
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Thu,</span> <span class="month">Feb</span>
+                                18
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Fri,</span> <span class="month">Feb</span>
+                                19
+                            </div>
+                            <div class="circle" data-mon="fri"></div>
+                            <div class="show-info">
+                                <span class="auctioneer-name">Kingsleys Auctions</span>
+
+                                <div class="show-time">09:30AM</div>
+                                <div class="auction-type">Antique and Collectables Auction</div>
+                                <div class="summary-mobile">
+                                    <strong>Location:</strong><span>116-118 Market St Merseyside</span>
+                                </div>
+                                <div class="overlay-wrapper overlay-wrapper-hide overlay">
+                                    <div class="overlay-header">
+                                        <div>Mon 19/02/2016 <span class="overlay-time">10:00AM</span></div>
+                                    </div>
+                                    <div class="overlay-content">
+                                        <a class="auctioneer">Kingley's Auctions</a>
+
+                                        <div class="auction-details">Antiques and Collectables Auction</div>
+                                        <div class="summary">
+                                            <strong>Location:</strong><span>116-118 Market St Merseyside</span>
+                                        </div>
+                                        <div class="auctioneer-logo">
+                                            <img src="http://placehold.it/35x35" alt="Kingley's Auctions">
+                                        </div>
+                                    </div>
+                                    <div class="overlay-footer">
+                                        <a href=""> View auction</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sat,</span> <span class="month">Feb</span>
+                                20
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="days">
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sun,</span> <span class="month">Feb</span>
+                                21
+                            </div>
+                            <div class="circle" data-mon="mon"></div>
+                            <div class="show-info">
+                                <span class="auctioneer-name">Kingsleys Auctions</span>
+
+                                <div class="show-time">10:30AM</div>
+                                <div class="auction-type">Antique and Collectables Auction</div>
+                                <div class="summary-mobile">
+                                    <strong>Location:</strong><span>116-118 Market St Merseyside</span>
+                                </div>
+                                <div class="overlay-wrapper overlay-wrapper-hide overlay">
+                                    <div class="overlay-header">
+                                        <div>Mon 21/02/2016 <span class="overlay-time">10:00AM</span></div>
+                                    </div>
+                                    <div class="overlay-content">
+                                        <a class="auctioneer">Kingley's Auctions</a>
+
+                                        <div class="auction-details">Antiques and Collectables Auction</div>
+                                        <div class="summary">
+                                            <strong>Location:</strong><span>116-118 Market St Merseyside</span>
+                                        </div>
+                                        <div class="auctioneer-logo">
+                                            <img src="http://placehold.it/35x35" alt="Kingley's Auctions">
+                                        </div>
+                                    </div>
+                                    <div class="overlay-footer">
+                                        <a href=""> View auction</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Mon,</span> <span class="month">Feb</span>
+                                22
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Tue,</span> <span class="month">Feb</span>
+                                23
+                            </div>
+                        </li>
+                        <li class="calendar-day current-day">
+                            <div class="date day-cell">
+                                <span class="day">Wed,</span> <span class="month">Feb</span>
+                                24
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Thu,</span> <span class="month">Feb</span>
+                                25
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Fri,</span> <span class="month">Feb</span>
+                                26
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sat,</span> <span class="month">Feb</span>
+                                27
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="days">
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sun,</span> <span class="month">Feb</span>
+                                28
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Mon,</span> <span class="month">Feb</span>
+                                29
+                            </div>
+                        </li>
+                        <li class="out-of-range calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Tue,</span> <span class="month">Mar</span>
+                                1
+                            </div>
+                        </li>
+                        <li class="out-of-range calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Wed,</span> <span class="month">Mar</span>
+                                2
+                            </div>
+                        </li>
+                        <li class="out-of-range calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Thu,</span> <span class="month">Mar</span>
+                                3
+                            </div>
+                        </li>
+                        <li class="out-of-range calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Fri,</span> <span class="month">Mar</span>
+                                4
+                            </div>
+                        </li>
+                        <li class="out-of-range calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sat,</span> <span class="month">Mar</span>
+                                5
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Weekdays for March -->
+                <div class="default-month" id="default">
+                    <ul class="days">
+                        <li class="out-of-range calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sun,</span> <span class="month">Feb</span>
+                                28
+                            </div>
+                        </li>
+                        <li class="out-of-range calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Mon,</span> <span class="month">Feb</span>
+                                29
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Tues,</span> <span class="month">Mar</span>
+                                1
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Wed,</span> <span class="month">Mar</span>
+                                2
+                            </div>
+                            <div class="circle" data-mon="wed"></div>
+                            <div class="show-info">
+                                <span class="auctioneer-name"><a
+                                        href="https://www.bidonthis.co.uk/live-online-auction/kingsley-s-online-auction-tuesday-10th-may-5220">Stacey's
+                                    Auctioneers</a></span>
+
+                                <div class="show-time">10:00AM</div>
+                                <div class="auction-type">Antique, Jewellery and Collectables Auction</div>
+                                <div class="summary-mobile">
+                                    <strong>Location:</strong><span> Essex Auction Rooms Essex</span>
+                                </div>
+                                <div class="overlay-wrapper overlay-wrapper-hide overlay">
+                                    <div class="overlay-header">
+                                        <div>Wed 02/03/2016 <span class="overlay-time">10:00AM</span></div>
+                                    </div>
+                                    <div class="overlay-content">
+                                        <a class="auctioneer">Stacey's Auctioneer</a>
+
+                                        <div class="auction-details">Antique, Jewellery and Collectables</div>
+                                        <div class="summary">
+                                            <strong>Location:</strong><span> Essex Auction Rooms Essex</span>
+                                        </div>
+                                        <div class="auctioneer-logo">
+                                            <img src="http://placehold.it/35x35" alt="Stacey's Auctioneer">
+                                        </div>
+                                    </div>
+                                    <div class="overlay-footer">
+                                        <a href=""> View auction</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Thu,</span> <span class="month">Mar</span>
+                                3
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Fri,</span> <span class="month">Mar</span>
+                                4
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sat,</span> <span class="month">Mar</span>
+                                5
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="days">
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sun,</span> <span class="month">Mar</span>
+                                6
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Mon,</span> <span class="month">Mar</span>
+                                7
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Tues,</span> <span class="month">Mar</span>
+                                8
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Wed,</span> <span class="month">Mar</span>
+                                9
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Thu,</span> <span class="month">Mar</span>
+                                10
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Fri,</span> <span class="month">Mar</span>
+                                11
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sat,</span> <span class="month">Mar</span>
+                                12
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="days">
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sun,</span> <span class="month">Mar</span>
+                                13
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Mon,</span> <span class="month">Mar</span>
+                                14
+                            </div>
+                            <div class="circle" data-mon="mon"></div>
+                            <div class="show-info">
+                                <span class="auctioneer-name"><a
+                                        href="https://www.bidonthis.co.uk/live-online-auction/kingsley-s-online-auction-tuesday-10th-may-5220">Kingsleys
+                                    Auctions</a></span>
+
+                                <div class="show-time">10:30AM</div>
+                                <div class="auction-type">Antique and Collectables Auction</div>
+                                <div class="summary-mobile">
+                                    <strong>Location:</strong><span>116-118 Market St Merseyside</span>
+                                </div>
+                                <div class="overlay-wrapper overlay-wrapper-hide overlay">
+                                    <div class="overlay-header">
+                                        <div>Mon 14/03/2016 <span class="overlay-time">10:00AM</span></div>
+                                    </div>
+                                    <div class="overlay-content">
+                                        <a class="auctioneer" href>Kingley's Auctions</a>
+
+                                        <div class="auction-details">Antiques and Collectables Auction</div>
+                                        <div class="summary">
+                                            <strong>Location:</strong><span>116-118 Market St Merseyside</span>
+                                        </div>
+                                        <div class="auctioneer-logo">
+                                            <img src="http://placehold.it/35x35" alt="Kingley's Auctions">
+                                        </div>
+                                    </div>
+                                    <div class="overlay-footer">
+                                        <a href=""> View auction</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Tue,</span> <span class="month">Mar</span>
+                                15
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Wed,</span> <span class="month">Mar</span>
+                                16
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Thu,</span> <span class="month">Mar</span>
+                                17
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Fri,</span> <span class="month">Mar</span>
+                                18
+                            </div>
+                            <div class="circle" data-mon="fri"></div>
+                            <div class="show-info">
+                                <span class="auctioneer-name">Stacey's Auctioneers</span>
+
+                                <div class="show-time">10:00AM</div>
+                                <div class="auction-type">Antique, Jewellery and Collectables</div>
+                                <div class="summary-mobile">
+                                    <strong>Location:</strong><span> Essex Auction Rooms Essex</span>
+                                </div>
+                                <div class="overlay-wrapper overlay-wrapper-hide overlay">
+                                    <div class="overlay-header">
+                                        <div>Fri 18/03/2016 <span class="overlay-time">10:00AM</span></div>
+                                    </div>
+                                    <div class="overlay-content">
+                                        <a class="auctioneer">Stacey's Auctioneer</a>
+
+                                        <div class="auction-details">Antique, Jewellery and Collectables</div>
+                                        <div class="summary">
+                                            <strong>Location:</strong><span> Essex Auction Rooms Essex</span>
+                                        </div>
+                                        <div class="auctioneer-logo">
+                                            <img src="http://placehold.it/35x35" alt="Stacey's Auctioneer">
+                                        </div>
+                                    </div>
+                                    <div class="overlay-footer">
+                                        <a href=""> View auction</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="show-info">
+                                <span class="auctioneer-name">The Auction Room</span>
+
+                                <div class="show-time">11:00AM</div>
+                                <div class="auction-type">Over 300 lots of antiques, collectables, retro and vintage
+                                    items.
+                                </div>
+                                <div class="summary-mobile">
+                                    <strong>Location:</strong><span> Northampton</span>
+                                </div>
+                                <div class="overlay-wrapper overlay-wrapper-hide overlay">
+                                    <div class="overlay-header">
+                                        <div>Fri 18/03/2016 <span class="overlay-time">11:00AM</span></div>
+                                    </div>
+                                    <div class="overlay-content">
+                                        <a class="auctioneer">The Auction Room</a>
+
+                                        <div class="auction-details">Over 300 lots of antiques, collectables, retro and
+                                            vintage items.
+                                        </div>
+                                        <div class="summary">
+                                            <strong>Location:</strong><span> Northampton</span>
+                                        </div>
+                                        <div class="auctioneer-logo">
+                                            <img src="http://placehold.it/35x35" alt="Stacey's Auctioneer">
+                                        </div>
+                                    </div>
+                                    <div class="overlay-footer">
+                                        <a href=""> View auction</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="show-info">
+                                <span class="auctioneer-name">The Auction Room</span>
+
+                                <div class="show-time">13:00PM</div>
+                                <div class="auction-type">Over 300 lots of antiques, collectables, retro and vintage
+                                    items.
+                                </div>
+                                <div class="summary-mobile">
+                                    <strong>Location:</strong><span> Northampton</span>
+                                </div>
+                                <div class="overlay-wrapper overlay-wrapper-hide overlay">
+                                    <div class="overlay-header">
+                                        <div>Fri 18/03/2016 <span class="overlay-time">13:00PM</span></div>
+                                    </div>
+                                    <div class="overlay-content">
+                                        <a class="auctioneer">The Auction Room</a>
+
+                                        <div class="auction-details">Over 300 lots of antiques, collectables, retro and
+                                            vintage items.
+                                        </div>
+                                        <div class="summary">
+                                            <strong>Location:</strong><span> hello</span>
+                                        </div>
+                                        <div class="auctioneer-logo">
+                                            <img src="http://placehold.it/35x35" alt="Stacey's Auctioneer">
+                                        </div>
+                                    </div>
+                                    <div class="overlay-footer">
+                                        <a href=""> View auction</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="show-info">
+                                <span class="auctioneer-name">The Auction Room</span>
+
+                                <div class="show-time">14:00PM</div>
+                                <div class="auction-type">Over 300 lots of antiques, collectables, retro and vintage
+                                    items.
+                                </div>
+                                <div class="summary-mobile">
+                                    <strong>Location:</strong><span>Northampton</span>
+                                </div>
+                                <div class="overlay-wrapper overlay-wrapper-hide overlay">
+                                    <div class="overlay-header">
+                                        <div>Fri 18/03/2016 <span class="overlay-time">14:00PM</span></div>
+                                    </div>
+                                    <div class="overlay-content">
+                                        <a class="auctioneer">The Auction Room</a>
+
+                                        <div class="auction-details">Over 300 lots of antiques, collectables, retro and
+                                            vintage items.
+                                        </div>
+                                        <div class="summary">
+                                            <strong>Location:</strong><span> Northampton</span>
+                                        </div>
+                                        <div class="auctioneer-logo">
+                                            <img src="http://placehold.it/35x35" alt="Stacey's Auctioneer">
+                                        </div>
+                                    </div>
+                                    <div class="overlay-footer">
+                                        <a href=""> View auction</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="overlay-side-hide">
+                                <div class="show-info multiple-event">
+                                    <span class="auctioneer-name">The Auction Room</span>
+
+                                    <div class="show-time">14:30PM</div>
+                                    <div class="auction-type">Over 300 lots of antiques, collectables, retro and vintage
+                                        items.
+                                    </div>
+                                    <div class="summary-mobile">
+                                        <strong>Location:</strong><span>Northampton</span>
+                                    </div>
+                                    <div class="overlay-wrapper overlay-wrapper-hide overlay">
+                                        <div class="overlay-header">
+                                            <div>Fri 18/03/2016 <span class="overlay-time">14:30PM</span></div>
+                                        </div>
+                                        <div class="overlay-content">
+                                            <a class="auctioneer">The Auction Room</a>
+
+                                            <div class="auction-details">Over 300 lots of antiques, collectables, retro
+                                                and vintage items.
+                                            </div>
+                                            <div class="summary">
+                                                <strong>Location:</strong><span> Northampton</span>
+                                            </div>
+                                            <div class="auctioneer-logo">
+                                                <img src="http://placehold.it/35x35" alt="Stacey's Auctioneer">
+                                            </div>
+                                        </div>
+                                        <div class="overlay-footer">
+                                            <a href=""> View auction</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="show-info multiple-event">
+                                    <span class="auctioneer-name">The Auction Room</span>
+
+                                    <div class="show-time">15:00PM</div>
+                                    <div class="auction-type">Over 300 lots of antiques, collectables, retro and vintage
+                                        items.
+                                    </div>
+                                    <div class="summary-mobile">
+                                        <strong>Location:</strong><span>Northampton</span>
+                                    </div>
+                                    <div class="overlay-wrapper overlay-wrapper-hide overlay">
+                                        <div class="overlay-header">
+                                            <div>Fri 18/03/2016 <span class="overlay-time">15:00PM</span></div>
+                                        </div>
+                                        <div class="overlay-content">
+                                            <a class="auctioneer">The Auction Room</a>
+
+                                            <div class="auction-details">Over 300 lots of antiques, collectables, retro
+                                                and vintage items.
+                                            </div>
+                                            <div class="summary">
+                                                <strong>Location:</strong><span> Northampton</span>
+                                            </div>
+                                            <div class="auctioneer-logo">
+                                                <img src="http://placehold.it/35x35" alt="Stacey's Auctioneer">
+                                            </div>
+                                        </div>
+                                        <div class="overlay-footer">
+                                            <a href=""> View auction</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="show-info multiple-event">
+                                    <span class="auctioneer-name">The Auction Room</span>
+
+                                    <div class="show-time">15:30PM</div>
+                                    <div class="auction-type">Over 300 lots of antiques, collectables, retro and vintage
+                                        items.
+                                    </div>
+                                    <div class="summary-mobile">
+                                        <strong>Location:</strong><span>Northampton</span>
+                                    </div>
+                                    <div class="overlay-wrapper overlay-wrapper-hide overlay">
+                                        <div class="overlay-header">
+                                            <div>Fri 18/03/2016 <span class="overlay-time">15:30PM</span></div>
+                                        </div>
+                                        <div class="overlay-content">
+                                            <a class="auctioneer">The Auction Room</a>
+
+                                            <div class="auction-details">Over 300 lots of antiques, collectables, retro
+                                                and vintage items.
+                                            </div>
+                                            <div class="summary">
+                                                <strong>Location:</strong><span> Northampton</span>
+                                            </div>
+                                            <div class="auctioneer-logo">
+                                                <img src="http://placehold.it/35x35" alt="Stacey's Auctioneer">
+                                            </div>
+                                        </div>
+                                        <div class="overlay-footer">
+                                            <a href=""> View auction</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="multiple-event-indicator"> +3</div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sat,</span> <span class="month">Mar</span>
+                                19
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="days">
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sun,</span> <span class="month">Mar</span>
+                                20
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Mon,</span> <span class="month">Mar</span>
+                                21
+                            </div>
+                            <div class="circle" data-mon="mon-two"></div>
+                            <div class="show-info">
+                                <span class="auctioneer-name">Stacey's Auctioneers</span>
+
+                                <div class="show-time">10:00AM</div>
+                                <div class="auction-type">Antique, Jewellery and Collectables</div>
+                                <div class="summary-mobile">
+                                    <strong>Location:</strong><span> Essex Auction Rooms Essex</span>
+                                </div>
+                                <div class="overlay-wrapper overlay-wrapper-hide overlay">
+                                    <div class="overlay-header">
+                                        <div>Mon 21/03/2016 <span class="overlay-time">10:00AM</span></div>
+                                    </div>
+                                    <div class="overlay-content">
+                                        <a class="auctioneer">Stacey's Auction</a>
+
+                                        <div class="auction-details">Antique, Jewellery and Collectables</div>
+                                        <div class="summary">
+                                            <strong>Location:</strong><span> Essex Auction Rooms Essex</span>
+                                        </div>
+                                        <div class="auctioneer-logo">
+                                            <img src="http://placehold.it/35x35" alt="Stacey's Auctioneer">
+                                        </div>
+                                    </div>
+                                    <div class="overlay-footer">
+                                        <a href=""> View auction</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Tue,</span> <span class="month">Mar</span>
+                                22
+                            </div>
+                        </li>
+                        <li class="calendar-day current-day">
+                            <div class="date day-cell">
+                                <span class="day">Wed,</span> <span class="month">Mar</span>
+                                23
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Thu,</span> <span class="month">Mar</span>
+                                24
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Fri,</span> <span class="month">Mar</span>
+                                25
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sat,</span> <span class="month">Mar</span>
+                                26
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="days">
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sun,</span> <span class="month">Mar</span>
+                                27
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Mon,</span> <span class="month">Mar</span>
+                                28
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Tue,</span> <span class="month">Mar</span>
+                                29
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Wed,</span> <span class="month">Mar</span>
+                                30
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Thu,</span> <span class="month">Mar</span>
+                                31
+                            </div>
+                        </li>
+                        <li class="out-of-range calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Fri,</span> <span class="month">Mar</span>
+                                1
+                            </div>
+                        </li>
+                        <li class="out-of-range calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sat,</span> <span class="month">Mar</span>
+                                2
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Weekdays for April -->
+                <div class="next-month-hide next-month" id="next">
+                    <ul class="days">
+                        <li class="out-of-range calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sun,</span> <span class="month">Mar</span>
+                                27
+                            </div>
+                        </li>
+                        <li class="out-of-range calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Mon,</span> <span class="month">Mar</span>
+                                28
+                            </div>
+                        </li>
+                        <li class="out-of-range calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Tues,</span> <span class="month">Mar</span>
+                                29
+                            </div>
+                        </li>
+                        <li class="out-of-range calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Wed,</span> <span class="month">Mar</span>
+                                30
+                            </div>
+                        </li>
+                        <li class="out-of-range calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Thu,</span> <span class="month">Mar</span>
+                                31
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Fri,</span> <span class="month">Apr</span>
+                                1
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sat,</span> <span class="month">Apr</span>
+                                2
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="days">
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sun,</span> <span class="month">Apr</span>
+                                3
+                            </div>
+                            <div class="circle" data-mon="wed"></div>
+                            <div class="show-info">
+                                <span class="auctioneer-name">Stacey's Auctioneers</span>
+
+                                <div class="show-time">10:00AM</div>
+                                <div class="auction-type">Antique, Jewellery and Collectables Auction</div>
+                                <div class="summary-mobile">
+                                    <strong>Location:</strong><span> Essex Auction Rooms Essex</span>
+                                </div>
+                                <div class="overlay-wrapper overlay-wrapper-hide overlay">
+                                    <div class="overlay-header">
+                                        <div>Wed 03/04/2016 <span class="overlay-time">10:00AM</span></div>
+                                    </div>
+                                    <div class="overlay-content">
+                                        <a class="auctioneer">Stacey's Auctioneer</a>
+
+                                        <div class="auction-details">Antique, Jewellery and Collectables</div>
+                                        <div class="summary">
+                                            <strong>Location:</strong><span> Essex Auction Rooms Essex</span>
+                                        </div>
+                                        <div class="auctioneer-logo">
+                                            <img src="http://placehold.it/35x35" alt="Stacey's Auctioneer">
+                                        </div>
+                                    </div>
+                                    <div class="overlay-footer">
+                                        <a href=""> View auction</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Mon,</span> <span class="month">Apr</span>
+                                4
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Tues,</span> <span class="month">Apr</span>
+                                5
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Wed,</span> <span class="month">Apr</span>
+                                6
+                            </div>
+                            <div class="circle" data-mon="wed"></div>
+                            <div class="show-info">
+                                <span class="auctioneer-name">Stacey's Auctioneers</span>
+
+                                <div class="show-time">10:00AM</div>
+                                <div class="auction-type">Antique, Jewellery and Collectables Auction</div>
+                                <div class="summary-mobile">
+                                    <strong>Location:</strong><span> Essex Auction Rooms Essex</span>
+                                </div>
+                                <div class="overlay-wrapper overlay-wrapper-hide overlay">
+                                    <div class="overlay-header">
+                                        <div>Wed 06/04/2016 <span class="overlay-time">10:00AM</span></div>
+                                    </div>
+                                    <div class="overlay-content">
+                                        <a class="auctioneer">Stacey's Auctioneer</a>
+
+                                        <div class="auction-details">Antique, Jewellery and Collectables</div>
+                                        <div class="summary">
+                                            <strong>Location:</strong><span> Essex Auction Rooms Essex</span>
+                                        </div>
+                                        <div class="auctioneer-logo">
+                                            <img src="http://placehold.it/35x35" alt="Stacey's Auctioneer">
+                                        </div>
+                                    </div>
+                                    <div class="overlay-footer">
+                                        <a href=""> View auction</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Thu,</span> <span class="month">Apr</span>
+                                7
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Fri,</span> <span class="month">Apr</span>
+                                8
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sat,</span> <span class="month">Apr</span>
+                                9
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="days">
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sun,</span> <span class="month">Apr</span>
+                                10
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Mon,</span> <span class="month">Apr</span>
+                                11
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Tue,</span> <span class="month">Apr</span>
+                                12
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Wed,</span> <span class="month">Apr</span>
+                                13
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Thu,</span> <span class="month">Apr</span>
+                                14
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Fri,</span> <span class="month">Apr</span>
+                                15
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sat,</span> <span class="month">Apr</span>
+                                16
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="days">
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sun,</span> <span class="month">Apr</span>
+                                17
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Mon,</span> <span class="month">Apr</span>
+                                18
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Tue,</span> <span class="month">Apr</span>
+                                19
+                            </div>
+                        </li>
+                        <li class="calendar-day current-day">
+                            <div class="date day-cell">
+                                <span class="day">Wed,</span> <span class="month">Apr</span>
+                                20
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Thu,</span> <span class="month">Apr</span>
+                                21
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Fri,</span> <span class="month">Apr</span>
+                                22
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sat,</span> <span class="month">Apr</span>
+                                23
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="days">
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sun,</span> <span class="month">Apr</span>
+                                24
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Mon,</span> <span class="month">Apr</span>
+                                25
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Tue,</span> <span class="month">Apr</span>
+                                26
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Wed,</span> <span class="month">Apr</span>
+                                27
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Thu,</span> <span class="month">Apr</span>
+                                28
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Fri,</span> <span class="month">Apr</span>
+                                29
+                            </div>
+                        </li>
+                        <li class="calendar-day">
+                            <div class="date day-cell">
+                                <span class="day">Sat,</span> <span class="month">Apr</span>
+                                30
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mobile list view for each day with an event feb march april-->
+                <ul class="day-list-hide" id="wed">
+                    <li class="calendar-day-list">
+                        <div class="show-info-list">
+                            <span class="auctioneer-name"><a
+                                    href="https://www.bidonthis.co.uk/live-online-auction/kingsley-s-online-auction-tuesday-10th-may-5220">Stacey's
+                                Auctioneers</a></span>
+
+                            <div class="show-time">10:00AM</div>
+                            <div class="auction-type">Antique, Jewellery and Collectables Auction</div>
+                            <div class="summary-mobile">
+                                <strong>Location:</strong><span> Essex Auction Rooms Essex</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="day-list-hide" id="mon">
+                    <li class="calendar-day-list">
+                        <div class="show-info-list">
+                            <span class="auctioneer-name"><a
+                                    href="https://www.bidonthis.co.uk/live-online-auction/kingsley-s-online-auction-tuesday-10th-may-5220">Kingsleys
+                                Auctions</a></span>
+
+                            <div class="show-time">10:30AM</div>
+                            <div class="auction-type">Antique and Collectables Auction</div>
+                            <div class="summary-mobile">
+                                <strong>Location:</strong><span>116-118 Market St Merseyside</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="day-list-hide" id="fri">
+                    <li class="calendar-day-list">
+                        <div class="show-info-list">
+                                <span class="auctioneer-name"><a
+                                        href="https://www.bidonthis.co.uk/live-online-auction/kingsley-s-online-auction-tuesday-10th-may-5220">Stacey's
+                                    Auctioneers</a></span>
+
+                            <div class="show-time">10:00AM</div>
+                            <div class="auction-type">Antique, Jewellery and Collectables</div>
+                            <div class="summary-mobile">
+                                <strong>Location:</strong><span> Essex Auction Rooms Essex</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="calendar-day-list">
+                        <div class="show-info-list">
+                            <span class="auctioneer-name"><a
+                                    href="https://www.bidonthis.co.uk/live-online-auction/kingsley-s-online-auction-tuesday-10th-may-5220">The
+                                Auction Room</a></span>
+
+                            <div class="show-time"><span class="time-list">11:00AM</span></div>
+                            <div class="auction-type">Over 300 lots of antiques, collectables, retro and vintage
+                                items.
+                            </div>
+                            <div class="summary-mobile">
+                                <strong>Location:</strong><span> Northampton</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="calendar-day-list">
+                        <div class="show-info-list">
+                            <span class="auctioneer-name"><a
+                                    href="https://www.bidonthis.co.uk/live-online-auction/kingsley-s-online-auction-tuesday-10th-may-5220">The
+                                Auction Room</a></span>
+
+                            <div class="show-time"><span class="time-list">13:00PM</span></div>
+                            <div class="auction-type">Over 300 lots of antiques, collectables, retro and vintage
+                                items.
+                            </div>
+                            <div class="summary-mobile">
+                                <strong>Location:</strong><span> Northampton</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="calendar-day-list">
+                        <div class="show-info-list">
+                            <span class="auctioneer-name"><a
+                                    href="https://www.bidonthis.co.uk/live-online-auction/kingsley-s-online-auction-tuesday-10th-may-5220">The
+                                Auction Room</a></span>
+
+                            <div class="show-time"><span class="time-list">14:00PM</span></div>
+                            <div class="auction-type">Over 300 lots of antiques, collectables, retro and vintage
+                                items.
+                            </div>
+                            <div class="summary-mobile">
+                                <strong>Location:</strong><span>Northampton</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="calendar-day-list">
+                        <div class="show-info-list">
+                            <span class="auctioneer-name"><a
+                                    href="https://www.bidonthis.co.uk/live-online-auction/kingsley-s-online-auction-tuesday-10th-may-5220">The
+                                Auction Room</a></span>
+
+                            <div class="show-time"><span>14:30PM</span></div>
+                            <div class="auction-type">Over 300 lots of antiques, collectables, retro and vintage
+                                items.
+                            </div>
+                            <div class="summary-mobile">
+                                <strong>Location:</strong><span>Northampton</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="calendar-day-list">
+                        <div class="show-info-list">
+                            <span class="auctioneer-name"><a
+                                    href="https://www.bidonthis.co.uk/live-online-auction/kingsley-s-online-auction-tuesday-10th-may-5220">The
+                                Auction Room</a></span>
+
+                            <div class="show-time"><span>15:00PM</span></div>
+                            <div class="auction-type">Over 300 lots of antiques, collectables, retro and vintage
+                                items.
+                            </div>
+                            <div class="summary-mobile">
+                                <strong>Location:</strong><span>Northampton</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="calendar-day-list">
+                        <div class="show-info-list">
+                            <span class="auctioneer-name"><a
+                                    href="https://www.bidonthis.co.uk/live-online-auction/kingsley-s-online-auction-tuesday-10th-may-5220">The
+                                Auction Room</a></span>
+
+                            <div class="show-time"><span>15:30PM</span></div>
+                            <div class="auction-type">Over 300 lots of antiques, collectables, retro and vintage
+                                items.
+                            </div>
+                            <div class="summary-mobile">
+                                <strong>Location:</strong><span>Northampton</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="day-list-hide" id="mon-two">
+                    <li class="calendar-day-list">
+                        <div class="show-info-list">
+                            <span class="auctioneer-name"><a
+                                    href="https://www.bidonthis.co.uk/live-online-auction/kingsley-s-online-auction-tuesday-10th-may-5220">Stacey's
+                                Auctioneers</a></span>
+
+                            <div class="show-time"><span>10:00AM</span></div>
+                            <div class="auction-type">Antique, Jewellery and Collectables</div>
+                            <div class="summary-mobile">
+                                <strong>Location:</strong><span> Essex Auction Rooms Essex</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="no-event" id="no-event">
+                    <h2 class="no-event">NO EVENT</h2>
+                    <p>TAP A DAY TO VIEW AN EVENT</p>
+                </div>
+            </div>
+            <!-- end of calendar -->
+        </div>
+        <!-- end of div[class="main"] -->
+    </div>
+    <!-- end of div container -->
+</div>
+
+<script src="js/vendor.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

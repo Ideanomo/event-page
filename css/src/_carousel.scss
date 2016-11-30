@@ -1,0 +1,20 @@
+$font-family: "Open Sans", sans-serif;
+$primary-color: $brand-tertiary-darkest;
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.touchevents {
+    .carousel button {
+      display: none;
+    }
+}
+
+@import 'mixin/disable-selection';
+@import 'mixin/font-size';
+@import 'mixin/transform';
+@import 'mixin/transition';
+
+@import 'module/carousel';
