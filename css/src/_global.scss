@@ -503,7 +503,6 @@ Break point 576px => 36 em
   nav .search {
     float: right;
     position: relative;
-   // right: 15px;
   }
 }
 
@@ -511,13 +510,14 @@ Break point 576px => 36 em
 Break point 1em => 16px so this is 768px (tablet/iPad)
 ==================================================================================================================== */
 @media screen and (min-width: 48em) {
-
   header {
     height: 3em;
   }
-  .nav { // attribute selector
+
+  .nav {
     margin-bottom: $vertical-measure;
   }
+
   body {
     margin: auto;
   }
@@ -531,9 +531,6 @@ Break point 1em => 16px so this is 768px (tablet/iPad)
 Break point 1000px => 62.5em
 ==================================================================================================================== */
 @media screen and (min-width: 62.5em) {
-  nav .search {
-  //  right: 45px;
-  }
   nav .menu {
     float: left;
     position: relative;

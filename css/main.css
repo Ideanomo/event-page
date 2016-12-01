@@ -544,8 +544,6 @@ Break point 576px => 36 em
 Break point 1em => 16px so this is 768px (tablet/iPad)
 ==================================================================================================================== */
 @media screen and (min-width: 48em) {
-  body {
-    background-color: #E8E7E7; }
   header {
     height: 3em; }
   .nav {
@@ -808,7 +806,7 @@ input.cmn-toggle-round-flat:checked + label:after {
         margin-bottom: 3px;
         color: #666666;
         font-size: 11px;
-        height: 16px; }
+        height: 30px; }
         .calendar-grid ul.weekdays li:hover {
           background-color: inherit; }
         .calendar-grid ul.weekdays li.day-of-week-grid {
