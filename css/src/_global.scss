@@ -512,9 +512,6 @@ Break point 1em => 16px so this is 768px (tablet/iPad)
 ==================================================================================================================== */
 @media screen and (min-width: 48em) {
 
-  body {
-    background-color: $brand-tertiary-lighter;
-  }
   header {
     height: 3em;
   }
